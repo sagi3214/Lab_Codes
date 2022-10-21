@@ -1,0 +1,23 @@
+package lab3;
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class L3_1 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		String str=sc.nextLine();
+		StringTokenizer st=new StringTokenizer(str);
+		int sum=0,tp;
+		while(st.hasMoreTokens()) {
+			
+			tp=Integer.parseInt(st.nextToken());
+			sum+=tp;
+			System.out.println(tp);
+		}
+		System.out.println("Sum is : "+sum);
+	}
+
+}
+Footer

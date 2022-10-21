@@ -1,0 +1,32 @@
+package 5;
+import java.util.Scanner;
+
+class EmployeeException extends Exception{
+	EmployeeException(String msg){
+		System.out.println(msg);
+	}
+}
+
+public class LabFive3 {
+	public static void main(String[] args) {
+		try {
+			salary();
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+		
+	}
+	public static void salary() throws EmployeeException{
+		System.out.println("Enter your Salary");
+		Scanner sc = new Scanner(System.in);
+		int sl= sc.nextInt();
+		if(sl<3000) {
+			throw new EmployeeException("Your Salary is below 3000");
+		}
+		else {
+			System.out.println("Your Salary is above 3000");
+		}
+	}
+
+}

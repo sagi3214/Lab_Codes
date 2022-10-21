@@ -1,0 +1,25 @@
+package lab_1;
+
+import java.util.*;
+
+public class L1_2 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		String sg=sc.nextLine();
+		switch(sg) {
+		case "red":
+			System.out.println("STOP");
+			break;
+		case "yellow":
+			System.out.println("READY");
+			break;
+		case "green":
+			System.out.println("GO");
+			break;
+		default:
+			System.out.println("Wrong color entered , try again!");
+		}
+	}
+
+}
